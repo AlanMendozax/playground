@@ -1,1 +1,28 @@
+{
+    "name": "S&R Dev",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu-22.04",
 
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {
+             "installZsh": true,
+             "username": "vscode"
+            },
+            "ghcr.io/devcontainers/features/git:1": {},
+            "ghcr.io/devcontainers/features/rust:1": {}
+       },
+
+       "postCreateCommand": "apt update && apt install -y build-essential clang cmake gdb valgrind linux-tools-common linux-tools-generic strace ltrace",
+
+       "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.cpptools",
+                "ms-vscode.cmake-tools",
+                "vadimcn.vscode-lldb"
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "zsh"
+            }
+        }
+    }
+}
