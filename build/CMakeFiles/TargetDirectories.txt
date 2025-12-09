@@ -1,0 +1,3 @@
+/workspaces/playground/build/CMakeFiles/hello.dir
+/workspaces/playground/build/CMakeFiles/edit_cache.dir
+/workspaces/playground/build/CMakeFiles/rebuild_cache.dir
