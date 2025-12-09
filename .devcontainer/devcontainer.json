@@ -11,7 +11,7 @@
             "ghcr.io/devcontainers/features/rust:1": {}
        },
 
-       "postCreateCommand": "sudo apt update && apt install build-essential clang cmake gdb valgrind linux-tools-common linux-tools-generic strace ltrace -y",
+       "postCreateCommand": ".devcontainer/setup.sh",
 
        "customizations": {
         "vscode": {
